@@ -3,7 +3,7 @@
 #include<stdlib.h>
 void main()
 {
-    int a[100],b[100];
+    int a[100];
     int f=0;
     int t,n;
     printf("enter the no:- of test cases:");
@@ -20,17 +20,15 @@ void main()
     
     scanf("%d",&a[i]);
     }
+    
     for(int i=0;i<n;i++)
     {
-        b[i]=a[i];   
-    }
-    for(int i=0;i<n;i++)
-    {
-        for(int j=i;j<n;j++)
+        for(int j=i+1;j<n;j++)
         {
-            for(int k=i;k<n;k++)
+            int ans=a[i]+a[j];
+            for(int k=0;k<n;k++)
             {
-            if((a[i]+a[j])==b[k])
+            if(ans==a[k])
                 f++;
             }
         }
