@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Program_1{
+public class Friend{
      public static void main(String[] args) {
         String str = "hello friend";
         char ele;
